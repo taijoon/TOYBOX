@@ -1,0 +1,3 @@
+COMPONENT=GauntletAppC
+include $(MAKERULES)
+
