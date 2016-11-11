@@ -31,6 +31,13 @@ interface Controls {
   command void glowslow(uint8_t val1, uint8_t val2);
  
   command void centerLed();
+  command void centerColor();
 
-  event void btn0Fired();
+  command void fingerLed();
+
+  async event void btn0Fired();
+
+  async event void btn1Fired();
+
+  async event void btn2Fired();
 }

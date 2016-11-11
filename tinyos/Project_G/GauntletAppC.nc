@@ -4,7 +4,7 @@ configuration GauntletAppC
 }
 implementation
 {
-  components MainC, GauntletC, LedsC;
+  components MainC, GauntletC, LedsC, ControlsC;
   components new TimerMilliC() as Timer0;
   components new TimerMilliC() as Timer1;
   components new TimerMilliC() as Timer2;
@@ -16,5 +16,6 @@ implementation
   GauntletC.Timer1 -> Timer1;
   GauntletC.Timer2 -> Timer2;
   GauntletC.Leds -> LedsC;
+  GauntletC.Controls -> ControlsC.Controls;
 }
 
